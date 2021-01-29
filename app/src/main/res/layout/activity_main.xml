@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marvel-api-bruno-costa.view.activities.ListCharacterActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_character"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_list_character" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/cl_main"
+        app:layout_constraintEnd_toEndOf="@id/cl_main"
+        app:layout_constraintStart_toStartOf="@id/cl_main"
+        app:layout_constraintBottom_toBottomOf="@id/cl_main"
+        android:gravity="center"
+        android:text="@string/heroes_not_found"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/txt_empty"
+        app:layout_constraintStart_toStartOf="@id/cl_main"
+        app:layout_constraintEnd_toEndOf="@id/cl_main"
+        android:text="@string/try_again"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

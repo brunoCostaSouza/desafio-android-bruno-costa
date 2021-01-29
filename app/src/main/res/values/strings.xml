@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Marvel Characters - Bruno Costa</string>
+    <string name="heroes_not_found">heroes not found</string>
+    <string name="try_again">Try again</string>
+    <string name="character_not_found">Character not found :(</string>
+    <string name="most_expensive_not_found">Comic most expensive not found :(</string>
+    <string name="comics">Comics:</string>
+    <string name="title_detail">Detail character</string>
+    <string name="title_most_expensive">Comic most expensive</string>
+</resources>

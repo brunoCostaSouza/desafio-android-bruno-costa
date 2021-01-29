@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_text">13sp</dimen>
+    <dimen name="medium_text">15sp</dimen>
+    <dimen name="img_height_detail">200dp</dimen>
+    <dimen name="large_text">25sp</dimen>
+</resources>
